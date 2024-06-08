@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  position: relative;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+}
+.container .toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 90px;
+  background: grey;
+  border-radius: 30px;
+}
+.toggle-button {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  position: relative;
+  border-radius: 50%;
+}
+.container .toggle.active {
+  background-color: blue;
+}
+.container .toggle.active .toggle-button {
+  left: 50px;
+}
